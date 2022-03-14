@@ -32,10 +32,10 @@ header p{
     top: -30px;
 }
 main{
-    height: calc(100vh - 130px);
+    height: calc(100vh - 210px);
     width: 100%;
     /*display: flex;*/
-    background-color: #8ed1fc;    
+    background-color:#63c731 /*#8ed1fc*/;    
 }
 .conteiner{
     display: flex;
@@ -76,4 +76,11 @@ main{
     margin: 20px 0;
     font-size: 20px;
     color: #007bff;
+}
+footer{
+    color: #ffffff;
+    height: 60px;
+    background-image: url(../midia/bg.jpg);
+    text-align: center;
+    padding-top: 30PX;
 }
