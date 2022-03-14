@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*body{
+    background-image: url(../midia/Repertorio-social.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}*/
+header{
+    height: 120px;
+    background-color: #8ed1fc;
+}
+#logo{
+    /*border: 2px solid brown;*/
+    width: 500px;
+    margin-left: 100px;
+    height: 100%;
+    /*color:#ffffff*/
+}
+#cred{
+    color: #007bff;
+}
+header h1{
+    font-size: 100px;
+    position: relative;
+    bottom: 10px;
+}
+header p{
+    font-size: 30px;
+    position: relative;
+    top: -30px;
+}
+main{
+    height: calc(100vh - 130px);
+    width: 100%;
+    /*display: flex;*/
+    background-color: #8ed1fc;    
+}
+.conteiner{
+    display: flex;
+    height: 50%;
+}
+.conteiner-a, .conteiner-b{
+    height: 100%;
+    width: 50%;
+}
+.conteiner-a{
+    text-align: center;
+}
+#apertaram{
+    font-size: 65px;
+    margin-top: 60px;
+}
+.conteiner-a p{
+    font-size: 30px;
+}
+.conteiner-b{
+    background-image: url(../midia/Repertorio-social.png);
+    background-size: 100%;
+}
+.conteiner-c{
+    display: flex;
+    padding: 10px 200px;
+}
+.conteiner-c div{
+    width: 300px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    text-align: center;
+    padding: 15px 10px 30px 10px;
+    margin: 0 50px;
+
+}
+.conteiner-c h2{
+    margin: 20px 0;
+    font-size: 20px;
+    color: #007bff;
+}
