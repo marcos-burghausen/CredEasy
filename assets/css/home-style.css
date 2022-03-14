@@ -10,10 +10,11 @@
 header{
     height: 120px;
     background-color: #8ed1fc;
+    display: flex;
 }
 #logo{
     /*border: 2px solid brown;*/
-    width: 500px;
+    width: 100%;
     margin-left: 100px;
     height: 100%;
     /*color:#ffffff*/
@@ -30,6 +31,18 @@ header p{
     font-size: 30px;
     position: relative;
     top: -30px;
+}
+header a{
+    text-align: center;
+    margin-top: 45px;
+    margin-right: 10%;
+    border: 1px solid #63c731;
+    padding: 10px 20px 8px 20px;
+    background-color: #ffffff;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
 }
 main{
     height: calc(100vh - 210px);
