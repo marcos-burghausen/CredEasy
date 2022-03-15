@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
 }
-/*body{
-    background-image: url(../midia/Repertorio-social.png);
+body{
+    background-image: url(../midia/home1.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-}*/
+}
 header{
     height: 120px;
-    background-color: #8ed1fc;
+    /*background-color: #8ed1fc;*/
     display: flex;
 }
 #logo{
@@ -17,7 +17,7 @@ header{
     width: 100%;
     margin-left: 100px;
     height: 100%;
-    /*color:#ffffff*/
+    color:#ffffff;
 }
 #cred{
     color: #007bff;
@@ -32,23 +32,30 @@ header p{
     position: relative;
     top: -30px;
 }
+header a:hover{
+    text-decoration: underline;
+    height: 25px;
+    width: 100px;
+}
 header a{
     text-align: center;
     margin-top: 45px;
     margin-right: 10%;
-    border: 1px solid #63c731;
+    /*border: 1px solid rgba(0, 123, 255, 0.5) /*63c731*/;
     padding: 10px 20px 8px 20px;
-    background-color: #ffffff;
+    background-color: rgba(0, 123, 255, 0.1);
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
     height: 25px;
     border-radius: 10px;
     font-size: 20px;
     text-decoration: none;
+    color: #ffffff;
 }
 main{
-    height: calc(100vh - 210px);
+    height: calc(100vh - 160px);
     width: 100%;
     /*display: flex;*/
-    background-color:#63c731 /*#8ed1fc*/;    
+    /*background-color:#63c731 /*#8ed1fc;*/    
 }
 .conteiner{
     display: flex;
@@ -57,32 +64,39 @@ main{
 .conteiner-a, .conteiner-b{
     height: 100%;
     width: 50%;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
 }
 .conteiner-a{
-    text-align: center;
+    
+    
 }
 #apertaram{
     font-size: 65px;
     margin-top: 60px;
 }
 .conteiner-a p{
-    font-size: 30px;
+    
 }
-.conteiner-b{
+/*.conteiner-b{
     background-image: url(../midia/Repertorio-social.png);
     background-size: 100%;
-}
+}*/
 .conteiner-c{
     display: flex;
     padding: 10px 200px;
 }
 .conteiner-c div{
     width: 300px;
-    border: 1px solid #000000;
+    /*border: 1px solid rgba(255, 255, 255, 0.3);*/
     border-radius: 20px;
     text-align: center;
     padding: 15px 10px 30px 10px;
     margin: 0 50px;
+    background-color: rgba(230, 230, 230, 0.2);
+    color: #ffffff;
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
 
 }
 .conteiner-c h2{
@@ -92,8 +106,8 @@ main{
 }
 footer{
     color: #ffffff;
-    height: 60px;
-    background-image: url(../midia/bg.jpg);
+    height: 30px;
+    /*background-image: url(../midia/bg.jpg);*/
     text-align: center;
-    padding-top: 30PX;
+    padding-top: 10PX;
 }
