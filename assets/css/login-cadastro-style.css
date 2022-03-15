@@ -1,23 +1,57 @@
-body{
+*{
   margin: 0;
   padding: 0;
-  /*background: #487eb0;*/
-  background-color:/*#3FA110*/#63c731;
 }
-.logo{
-  padding: 0 0 0 10%;
+body{
+  background-image: url(../midia/home1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
-.logo img, p{
-  display: inline;
+header{
+  height: 120px;
+  /*background-color: #8ed1fc;*/
+  display: flex;
 }
-.logo p{
-  font-size: 80px;
-  color: #fff /*#365fff*/;
-  padding: 30px 0 0 0;
+#logo{
+  /*border: 2px solid brown;*/
+  width: 100%;
+  margin-left: 100px;
+  height: 100%;
+  color:#ffffff;
+}
+#cred{
+  color: #007bff;
+}
+header h1{
+  font-size: 100px;
   position: relative;
-  bottom: 25px;
+  bottom: 10px;
 }
-.signup-form{
+header p{
+  font-size: 30px;
+  position: relative;
+  top: -30px;
+}
+header a:hover{
+  text-decoration: underline;
+  height: 25px;
+  width: 100px;
+}
+header a{
+  text-align: center;
+  margin-top: 45px;
+  margin-right: 10%;
+  /*border: 1px solid rgba(0, 123, 255, 0.5) /*63c731*/;
+  padding: 10px 20px 8px 20px;
+  background-color: rgba(0, 123, 255, 0.1);
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
+  height: 25px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.login-form{
   width: 300px;
   padding: 20px;
   text-align: center;
@@ -28,13 +62,12 @@ body{
   transform: translate(-50%,-50%);
   overflow: hidden;
 }
-.signup-form h1{
+.login-form h1{
   margin-top: 100px;
-  font-family: 'Permanent Marker', cursive;
   color: #fff;
-  font-size: 40px;
+  font-size: 50px;
 }
-.signup-form input{
+.login-form input{
   display: block;
   width: 100%;
   padding: 0 16px;
@@ -50,7 +83,7 @@ body{
   background: rgba(255,255,255,.5);
   border-radius: 6px;
 }
-.signup-btn{
+.login-btn{
   margin-top: 60px;
   margin-bottom: 20px;
   background: #365fff;
@@ -59,10 +92,10 @@ body{
   cursor: pointer;
   transition: 0.8s;
 }
-.signup-btn:hover{
+.loginlogin-btn:hover{
   transform: scale(0.96);
 }
-.signup-form a{
+.login-form a{
   text-decoration: none;
   color: #fff;
   font-family: "montserrat",sans-serif;
@@ -71,6 +104,6 @@ body{
   transition: 0.8s;
   display: block;
 }
-.signup-form a:hover{
+.login-form a:hover{
   background: rgba(0,0,0,.3);
 }
