@@ -80,8 +80,9 @@ header a{
 }
 .txtb{
   margin: 20px 0;
-  background: rgba(255,255,255,.5);
+  background: rgba(0,123,255,.3);
   border-radius: 6px;
+  color: #ffffff;
 }
 .login-btn{
   margin-top: 60px;
