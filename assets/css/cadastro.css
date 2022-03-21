@@ -1,0 +1,101 @@
+
+body{
+    background-image: url(../midea/home1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    height: 105px;
+    display: flex;
+    width: 100%;
+}
+.logo{
+    width: auto;
+    margin-left: 8%;
+    height: 100%;
+    color:#ffffff;
+}
+#cred{
+   color: #007bff;
+}
+header h1{
+    font-size: 100px;
+    position: relative;
+    bottom: 10px;
+}
+header p{
+    font-size: 28px;
+    position: relative;
+    top: -27px;
+}
+header a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.register-form{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: -10px;
+    padding: 0 20px 10px 20px;
+    box-shadow: -10px 10px 10px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+.register-form h1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 45px;
+}
+.register-form label{
+   color: #ffffff;
+}
+.register-form label, input{
+    display: block;
+}
+.register-form input{
+    width: 390px;
+    height: 40px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#send-form{
+    width: 300px;
+    margin: 0 auto;  
+}
+#send-form:hover{
+   width: 405px;
+}
+.register-form input::placeholder{
+   color: #ffffff;
+}
+@media screen and (max-width: 480px){
+    .logo{
+        margin: auto;
+    }
+    header h1{
+        font-size: 80px;
+        margin-top: 25px;
+    }
+    header p{
+        font-size: 22px;
+        position: relative;
+        top: -23px;
+    }
+    .register-form{
+        width: 90%;
+        padding: 0 0 15px 0;
+        box-shadow: none;
+
+    }
+    .register-form input{
+        width: 98%;
+    }
+    .register-form{
+        margin-top: 1px;
+    }
+    #send-form{
+        width: 75%;
+    }
+}

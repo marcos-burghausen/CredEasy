@@ -1,48 +1,51 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 body{
     background-image: url(../midea/home1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+    /* ===================Cabeçario=================== */
 header{
-    height: 120px;
-    /*background-color: #8ed1fc;*/
+    height: 105px;
     display: flex;
-}
-#logo{
-    /*border: 2px solid brown;*/
     width: 100%;
-    margin-left: 100px;
+}
+.logo{
+    width: 80%;
+    margin-left: 8%;
     height: 100%;
     color:#ffffff;
+}
+.logo div{
+    width: 410px;
 }
 #cred{
     color: #007bff;
 }
 header h1{
+    /* border: #ffffff solid 1px; */
+    width: ;
     font-size: 100px;
-    position: relative;
-    bottom: 10px;
+    /* position: relative;
+    bottom: 10px; */
 }
 header p{
-    font-size: 30px;
-    position: relative;
-    top: -30px;
+    font-size: 28px;
+    /* position: relative;
+    top: -27px; */
+    margin-top: -10px;
 }
-header a:hover{
-    text-decoration: underline;
-    height: 25px;
-    width: 100px;
+.login{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    
 }
-header a{
+.login a{
     text-align: center;
-    margin-top: 45px;
-    margin-right: 10%;
     padding: 10px 20px 8px 20px;
-    background-color: rgba(0, 123, 255, 0.1);
+    background-color:  rgba(0, 0, 0, 0.6);
     box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
     height: 25px;
     border-radius: 10px;
@@ -50,54 +53,56 @@ header a{
     text-decoration: none;
     color: #ffffff;
 }
+header a:hover{
+    text-decoration: underline;
+    height: 25px;
+}
 main{
     height: calc(100vh - 160px);
     width: 100%;
-    /*display: flex;*/
-    /*background-color:#63c731 /*#8ed1fc;*/    
 }
 .conteiner{
     display: flex;
     height: 50%;
-    /* border: #ffffff solid 1px; */
 }
 .conteiner-a, .conteiner-b{
     height: 100%;
-    /* width: 50%; */
     color: #ffffff;
     font-size: 30px;
     text-align: center;
-    /* border: #ffffff solid 1px; */
 }
 .conteiner-a{
     width: 48%;   
 }
 .conteiner-b{
-    width: 58%;
+    width: 52%;
 }
 #apertaram{
     font-size: 65px;
     margin-top: 60px;
 }
-.conteiner-a p{
-    
+.conteiner-c{ 
+    display: flex; 
+    height: 50%;  
 }
-/*.conteiner-b{
-    background-image: url(../midia/Repertorio-social.png);
-    background-size: 100%;
-}*/
-.conteiner-c{
+#left{
+    width: 48%;
+    height: 100%;
+    /* border: 1px solid #ffffff; */
+}
+#cards{
+    /* border: 1px solid #ffffff; */
+    width: 52%;
+    height: 100%;    
     display: flex;
-    padding: 10px 40px 10px 650px;
 }
-.conteiner-c div{
+#cards div{
     width: 125px;
-    /*border: 1px solid rgba(255, 255, 255, 0.3);*/
     border-radius: 20px;
     text-align: center;
     padding: 0px 10px 30px 10px;
     margin: 0 40px;
-    background-color: rgba(230, 230, 230, 0.2);
+    background-color:  rgba(0, 0, 0, 0.6);
     color: #ffffff;
     box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
 
@@ -110,7 +115,86 @@ main{
 footer{
     color: #ffffff;
     height: 30px;
-    /*background-image: url(../midia/bg.jpg);*/
     text-align: center;
     padding-top: 10PX;
+}
+@media screen and (max-width:480px){
+    header{
+        display: block;
+        height: auto;
+    }
+    .logo{
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .logo div{
+        display: inline-block;
+        
+
+    }
+    header h1{
+        display: inline;
+        text-align: center;
+        font-size: 80px;
+        margin-top: 25px;
+    }
+    header p{
+        display: inline-block;
+        font-size: 22px;
+        /* position: relative; */
+        /* top: -23px; */
+        /* left: 18%; */
+    }
+    header .login{
+        margin: auto; 
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        vertical-align: auto;       
+    }
+    .login a{
+        align-items: center;
+    }
+    main{
+        height: auto;
+    }
+    .conteiner-a{
+        width: auto;
+    }
+    .conteiner-b{
+        width: 100%;
+    }
+    #apertaram{
+        margin-top: 30px;
+        font-size: 45px;
+    }
+    .conteiner-b p{
+        font-size: 27px;
+    }
+    .conteiner-c{
+        padding: 0;
+        height: auto;
+        width: 100%;
+        box-shadow: none;
+    }
+    #left{
+        height: auto;
+        width: auto;
+    }
+    #cards{
+        display: inline;
+        width: 80%;
+        height: auto;
+        box-shadow: none;
+        padding: 0 0 0 10%;
+    }
+    #cards div{
+        box-shadow: none;
+        width: auto;
+        margin: 0;
+    }
+    #cards h2{
+        font-size: 30px;
+    }
 }
