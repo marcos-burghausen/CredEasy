@@ -1,20 +1,17 @@
-*{
-  margin: 0;
-  padding: 0;
-}
+
 body{
   background-image: url(../midea/home1.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 header{
-  height: 120px;
+  height: 105px;
   display: flex;
-  /* border: #ffffff solid 1px; */
-}
-#logo{
   width: 100%;
-  margin-left: 100px;
+}
+.logo{
+    width: auto;
+  margin-left: 8%;
   height: 100%;
   color:#ffffff;
 }
@@ -27,9 +24,9 @@ header h1{
   bottom: 10px;
 }
 header p{
-  font-size: 30px;
+  font-size: 28px;
   position: relative;
-  top: -30px;
+  top: -27px;
 }
 header a{
   text-decoration: none;
@@ -61,7 +58,6 @@ header a{
   color: #ffffff;
   margin-bottom: 10px;
   border-radius: 10px;
-  padding-left: 10px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 #send-form{
@@ -73,4 +69,33 @@ header a{
 }
 .register-form input::placeholder{
   color: #ffffff;
+}
+@media screen and (max-width: 480px){
+    .logo{
+        margin: auto;
+    }
+    header h1{
+        font-size: 80px;
+        margin-top: 25px;
+    }
+    header p{
+        font-size: 22px;
+        position: relative;
+        top: -23px;
+    }
+    .register-form{
+        width: 90%;
+        padding: 0 0 15px 0;
+        box-shadow: none;
+
+    }
+    .register-form input{
+        width: 98%;
+    }
+    .register-form{
+        margin-top: 1px;
+    }
+    #send-form{
+        width: 75%;
+    }
 }
