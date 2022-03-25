@@ -4,59 +4,64 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-    /* ===================Cabeçario=================== */
+
+    /* ========================================Cabeçario============================================= */
+
 header{
-    height: 105px;
+    /* background: linear-gradient(45deg, #084177, #687466, #cd8d7b, #fbc490); */
+    height: auto;
+    width: 90%;
+    margin-left: calc(50% - 45%);
     display: flex;
-    width: 100%;
+    position: fixed;
+    /* overflow: hidden; */
+    /* background-color:aquamarine; */
 }
-.logo{
-    width: 80%;
-    margin-left: 8%;
-    height: 100%;
-    color:#ffffff;
+#logo{
+    display: table;
+    text-align: center;
 }
-.logo div{
-    width: 410px;
+#logo img{
+    width: max(75px, 7vw);
+    height: auto;
 }
 #cred{
+    width: 50%;
+    height: 100%;
+    color:#007bff;
+}
+#cred span{
     color: #007bff;
 }
 header h1{
-    /* border: #ffffff solid 1px; */
-    width: ;
-    font-size: 100px;
-    /* position: relative;
-    bottom: 10px; */
-}
-header p{
-    font-size: 28px;
-    /* position: relative;
-    top: -27px; */
-    margin-top: -10px;
-}
-.login{
-    height: 100%;
-    width: 20%;
-    display: flex;
-    align-items: center;
-    
-}
-.login a{
-    text-align: center;
-    padding: 10px 20px 8px 20px;
-    background-color:  rgba(0, 0, 0, 0.6);
-    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
-    height: 25px;
-    border-radius: 10px;
-    font-size: 20px;
-    text-decoration: none;
-    color: #ffffff;
-}
-header a:hover{
+    /* max: pega o valor maior entre os dois */
+    font-size: max(45px, 5vw);   /* viewport unit, vw é o tamanho baseado na lagura w (width)*/
+    position: relative;
+    top: 2vh;
     text-decoration: underline;
-    height: 25px;
 }
+header nav{
+    width: 41%;
+}
+nav ul{
+    margin-top: 4.5vh;
+    text-align: center;
+}
+nav li{
+    display: inline;
+    margin-left: 2%;
+    font-size: max(20px, 3vw);
+}
+nav a{
+    color:#007bff;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* ==========================================Conteudo============================================= */
+
 main{
     height: calc(100vh - 160px);
     width: 100%;
@@ -64,11 +69,13 @@ main{
 .conteiner{
     display: flex;
     height: 50%;
+    width: 90%;
+    margin-left: calc(50% - 45%);
 }
 .conteiner-a, .conteiner-b{
     height: 100%;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 2.5vw;
     text-align: center;
 }
 .conteiner-a{
@@ -78,12 +85,14 @@ main{
     width: 52%;
 }
 #apertaram{
-    font-size: 65px;
-    margin-top: 60px;
+    font-size: 4.5vw;
+    margin: 60px 0 10px 0;
 }
 .conteiner-c{ 
     display: flex; 
-    height: 50%;  
+    height: 50%;
+    width: 90%;
+    margin-left: calc(50% - 45%);
 }
 #left{
     width: 48%;
@@ -91,17 +100,16 @@ main{
     /* border: 1px solid #ffffff; */
 }
 #cards{
-    /* border: 1px solid #ffffff; */
     width: 52%;
     height: 100%;    
     display: flex;
 }
 #cards div{
-    width: 125px;
+    width: 10vw;
     border-radius: 20px;
     text-align: center;
     padding: 0px 10px 30px 10px;
-    margin: 0 40px;
+    margin: 0 2vw;
     background-color:  rgba(0, 0, 0, 0.6);
     color: #ffffff;
     box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
@@ -118,6 +126,12 @@ footer{
     text-align: center;
     padding-top: 10PX;
 }
+
+
+
+
+
+
 @media screen and (max-width:480px){
     header{
         display: block;
