@@ -1,132 +1,130 @@
 
 body{
-    background-image: url(../midea/home1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(../midea/home1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-    /* ========================================Cabeçario============================================= */
+/* ========================================Cabeçario============================================= */
 
 header{
-    /* background: linear-gradient(45deg, #084177, #687466, #cd8d7b, #fbc490); */
-    height: auto;
-    width: 90%;
-    margin-left: calc(50% - 45%);
-    display: flex;
-    /* position: fixed; */
-    /* overflow: hidden; */
-    /* background-color:aquamarine; */
+  height: 60px;
 }
-#logo{
-    display: table;
-    text-align: center;
+header section{
+  width: 90%;
+  margin-left: calc(50% - 45%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+    }
+.logo{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#logo img{
-    width: max(75px, 7vw);
-    height: auto;
+.logo img{
+  display: inline;
+  width: 60px;
+  height: auto;
 }
-#cred{
-    width: 50%;
-    height: 100%;
-    color:#007bff;
-}
-#cred span{
-    color: #007bff;
-}
-header h1{
-    /* max: pega o valor maior entre os dois */
-    font-size: max(45px, 5vw);   /* viewport unit, vw é o tamanho baseado na lagura w (width)*/
-    position: relative;
-    top: 2vh;
-    text-decoration: underline;
-}
-header nav{
-    width: 41%;
-}
-nav ul{
-    margin-top: 4.5vh;
-    text-align: center;
-}
-nav li{
-    display: inline;
-    margin-left: 2%;
-    font-size: max(20px, 3vw);
+.logo h1{
+  color: #007bff;
+  font-size: 50px;
+  display: inline;
+  text-decoration: underline;
 }
 nav a{
-    color:#007bff;
-    text-decoration: none;
+  color:#007bff; 
+  text-decoration: none; 
 }
 nav a:hover{
-    text-decoration: underline;
+  text-decoration: underline;
+}
+nav li{
+  display: inline;
+  font-size: 20px;
+  margin: 0 10px;
+}
+.acesso a{
+  font-size: 25px;
+  margin: 0 30px;
+  color:#007bff;
+  text-decoration: none;
+}
+.acesso a:hover{
+  text-decoration: underline;
 }
 
-/* ==========================================Conteudo============================================= */
+/* ==========================================Conteúdo============================================= */
 
 main{
-    height: calc(100vh - 160px);
-    width: 100%;
+  height: calc(100vh - 95px);
+  width: 100%;
 }
 .conteiner{
-    display: flex;
-    height: 50%;
-    width: 90%;
-    margin-left: calc(50% - 45%);
+  display: flex;
+  height: 50%;
+  width: 90%;
+  margin-left: calc(50% - 45%);
 }
 .conteiner-a, .conteiner-b{
-    height: 100%;
-    color: #ffffff;
-    font-size: 2.5vw;
-    text-align: center;
+  height: 100%;
+  color: #ffffff;
+  font-size: 2.5vw;
+  text-align: center;
 }
 .conteiner-a{
-    width: 48%;   
+  width: 48%;   
 }
 .conteiner-b{
-    width: 52%;
+  width: 52%;
 }
 #apertaram{
-    font-size: 4.5vw;
-    margin: 60px 0 10px 0;
+  font-size: 4.5vw;
+  margin: 60px 0 10px 0;
 }
 .conteiner-c{ 
-    /* background-color:#ffffff; */
-    display: flex; 
-    height: 50%;
-    width: 90%;
-    margin-left: calc(50% - 45%);
+  /* background-color:#ffffff; */
+  display: flex; 
+  height: 50%;
+  width: 90%;
+  margin-left: calc(50% - 45%);
 }
 #left{
-    width: 48%;
-    height: 100%;
-    /* border: 1px solid #ffffff; */
+  width: 48%;
+  height: 100%;
+  /* border: 1px solid #ffffff; */
 }
 #cards{
-    width: 52%;
-    height: 100%;    
-    display: flex;
+  width: 52%;
+  height: 100%;    
+  display: flex;
 }
 #cards div{
-    width: 10vw;
-    border-radius: 20px;
-    text-align: center;
-    padding: 0px 10px 30px 10px;
-    margin: 0 2vw;
-    background-color:  rgba(0, 0, 0, 0.6);
-    color: #ffffff;
-    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
-
+  width: 10vw;
+  border-radius: 20px;
+  text-align: center;
+  padding: 0px 10px 30px 10px;
+  margin: 0 2vw;
+  background-color:  rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
 }
 .conteiner-c h2{
-    margin: 20px 0;
-    font-size: 20px;
-    color: #007bff;
+  margin: 20px 0;
+  font-size: 20px;
+  color: #007bff;
 }
+
+/* ==============================================Rodapé============================================== */
+
 footer{
-    /* background-color: #007bff; */
-    color: #ffffff;
-    height: 30px;
-    text-align: center;
-    padding-top: 30PX;
+  color: #ffffff;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -135,82 +133,80 @@ footer{
 
 
 @media screen and (max-width:480px){
-    header{
-        display: block;
-        height: auto;
-    }
-    .logo{
-        margin-left: 0;
-        width: 100%;
-        text-align: center;
-    }
-    .logo div{
-        display: inline-block;
-        
-
-    }
-    header h1{
-        display: inline;
-        text-align: center;
-        font-size: 80px;
-        margin-top: 25px;
-    }
-    header p{
-        display: inline-block;
-        font-size: 22px;
-        /* position: relative; */
-        /* top: -23px; */
-        /* left: 18%; */
-    }
-    header .login{
-        margin: auto; 
-        padding-top: 20px;
-        display: flex;
-        justify-content: center;
-        vertical-align: auto;       
-    }
-    .login a{
-        align-items: center;
-    }
-    main{
-        height: auto;
-    }
-    .conteiner-a{
-        width: auto;
-    }
-    .conteiner-b{
-        width: 100%;
-    }
-    #apertaram{
-        margin-top: 30px;
-        font-size: 45px;
-    }
-    .conteiner-b p{
-        font-size: 27px;
-    }
-    .conteiner-c{
-        padding: 0;
-        height: auto;
-        width: 100%;
-        box-shadow: none;
-    }
-    #left{
-        height: auto;
-        width: auto;
-    }
-    #cards{
-        display: inline;
-        width: 80%;
-        height: auto;
-        box-shadow: none;
-        padding: 0 0 0 10%;
-    }
-    #cards div{
-        box-shadow: none;
-        width: auto;
-        margin: 0;
-    }
-    #cards h2{
-        font-size: 30px;
-    }
+  header{
+    display: block;
+    height: auto;
+  }
+  .logo{
+    margin-left: 0;
+     width: 100%;
+    text-align: center;
+  }
+  .logo div{
+    display: inline-block;
+  }
+  header h1{
+    display: inline;
+    text-align: center;
+    font-size: 80px;
+    margin-top: 25px;
+  }
+  header p{
+    display: inline-block;
+    font-size: 22px;
+    /* position: relative; */
+    /* top: -23px; */
+    /* left: 18%; */
+  }
+  header .login{
+    margin: auto; 
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    vertical-align: auto;       
+  }
+  .login a{
+    align-items: center;
+  }
+  main{
+    height: auto;
+  }
+  .conteiner-a{
+    width: auto;
+  }
+  .conteiner-b{
+    width: 100%;
+  }
+  #apertaram{
+    margin-top: 30px;
+    font-size: 45px;
+  }
+  .conteiner-b p{
+    font-size: 27px;
+  }
+  .conteiner-c{
+    padding: 0;
+    height: auto;
+    width: 100%;
+    box-shadow: none;
+  }
+  #left{
+    height: auto;
+    width: auto;
+  }
+  #cards{
+    display: inline;
+    width: 80%;
+    height: auto;
+    box-shadow: none;
+    padding: 0 0 0 10%;
+  }
+  #cards div{
+    box-shadow: none;
+    width: auto;
+    margin: 0;
+  }
+  #cards h2{
+    font-size: 30px;
+  }
 }
