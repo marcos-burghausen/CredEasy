@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt" dir="br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="solicitar-emprestimo-style.css">
+    <title>SOLICITAR EMPRÉSTIMO</title>
+  </head>
+
+  <body>
+
+<!-- ==========================================cabeçalho=============================================== -->
+
+    <header>
+      <section>
+        <div class="logo">
+          <img src="../assets\midea\fluxo-de-dinheiro.png" alt="">
+          <h1>CredEasy</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </section>  
+    </header>
+
+<!-- =====================================conteúdo===================================================== -->
+    
+    <main>
+      <form class="register-form" action="index.html" method="post">
+        <h1>EMPRÉSTIMO</h1>
+        <!-- <label for="valor">Valor</label> -->
+        <input type="number" id="valor" placeholder="R$ 1000,00" minlength="3" required>
+
+        <!-- <label for="parcelas">Parcelas</label> -->
+        <input type="number" id="password" placeholder="12" required>
+
+        <input type="submit" id="send-form" value="Enviar formulário">
+      </form>
+    </main>
+
+<!-- ==========================================rodapé================================================ -->
+
+    <footer>
+      <p class="copyright">&copy; CredEasy - 2022</p>
+    </footer>
+  </body>
+</html>

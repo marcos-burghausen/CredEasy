@@ -1,12 +1,15 @@
 
+@import url(../css/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;900&display=swap');
+
+/* ===================================================================== */
+/* ==============================cabeçalho============================== */
+/* ===================================================================== */
 body{
-  background-image: url(../midea/home1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(45deg, #a7cfdf 0%,#23538a 50%);
+  font-family:  'Montserrat', sans-serif;
+  font-weight: 600;
 }
-
-/* =============================================cabeçalho==================================== */
-
 header{
   height: 60px;
 }

@@ -1,5 +1,5 @@
 
-@import url(../assets/css/reset.css);
+@import url('../css/reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;900&display=swap');
 
 
@@ -67,7 +67,7 @@ main{
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     width: 100%;
-    max-width: 45rem;
+    max-width: 37rem;
     padding: 1.75rem;
     box-sizing: border-box;
     margin-bottom: 1rem;
@@ -113,6 +113,7 @@ main{
     left: 0.5rem;
     transition: .25s;
 }
+
 .input:focus ~ .input-label,  /*quando estiver em foco e for valido vai ficar nessa posição*/
 .input:valid ~ .input-label{
     transform: translateY(-5px);

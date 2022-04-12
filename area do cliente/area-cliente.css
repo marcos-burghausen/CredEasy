@@ -1,12 +1,18 @@
 
+@import url('../css/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;900&display=swap');
+
+
 body{
-    background-image: url(../midea/home1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  /* =============================================cabeçalho==================================== */
-  
+    background: linear-gradient(45deg, #a7cfdf 0%,#23538a 50%);
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+/* ===================================================================== */
+/* ==============================CABEÇALHO============================== */
+/* ===================================================================== */
+
   header{
     height: 60px;
   }
@@ -34,26 +40,9 @@ body{
     display: inline;
     text-decoration: underline;
   }
-  nav a{
+  .cliente{
+    font-size: 50px;
     color: #007bff;
-    text-decoration: none;
-  }
-  nav a:hover{
-    text-decoration: underline;
-  }
-  nav li{
-    display: inline;
-    font-size: 20px;
-    margin: 0 10px;
-  }
-  .acesso a{
-    font-size: 25px;
-    margin: 0 30px;
-    color: #007bff;
-    text-decoration: none;
-  }
-  .acesso a:hover{
-    text-decoration: underline;
   }
   
   /* =============================================conteúdo=============================================== */
@@ -65,9 +54,11 @@ body{
     justify-content: center;
     align-items: center;
   }
-  main h2{
-      font-size: 50px;
-      color: #ffffff;
+  .dados-cliente a{
+    display: block;
+    color: #ffffff;
+    font-size: 50px;
+    margin: 10px 0;
   }
   
   /* =================================================rodapé============================================== */
@@ -75,8 +66,6 @@ body{
   footer{
     color: #ffffff;
     height: 35px;
-    /* text-align: center; */
-    /* padding-top: 30PX; */
     display: flex;
     justify-content: center;
     align-items: center;
