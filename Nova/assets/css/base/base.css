@@ -1,0 +1,91 @@
+@import url(_reset.css);
+@import url(_variaveis.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;900&display=swap');
+
+body{
+  /* background: linear-gradient(45deg, #a7cfdf 0%,#23538a 50%); */
+  background-color: #23538a;
+  font-family:  'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+/* ===================================================================== */
+/* ==============================CABEÇALHO============================== */
+/* ===================================================================== */
+
+header{
+  padding: 15px;
+}
+header section{
+  width: 90%;
+  margin-left: calc(50% - 45%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+    }
+.logo{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+  display: inline;
+  width: 60px;
+  height: auto;
+}
+.logo h1{
+  color: #007bff;
+  font-size: 50px;
+  display: inline;
+  text-decoration: underline;
+}
+nav a{
+  color:#007bff; 
+  text-decoration: none; 
+}
+nav a:hover{
+  text-decoration: underline;
+}
+nav li{
+  display: inline;
+  font-size: 20px;
+  margin: 0 10px;
+}
+.acesso a{
+  font-size: 25px;
+  margin: 0 30px;
+  color:#007bff;
+  text-decoration: none;
+}
+.acesso a:hover{
+  text-decoration: underline;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex--centro {
+	align-items: center;
+	justify-content: center;
+}
+
+.flex--coluna {
+	flex-direction: column;
+}
+
+@media(min-width: 800px) {
+  .container {
+		padding-right: 2.5rem;
+		padding-left: 2.5rem;	
+	}
+}
+
+@media(min-width: 1200px) {
+	.container {
+		padding-left: calc((100vw - 900px)/2);
+		padding-right: calc((100vw - 900px)/2);
+	}
+}

@@ -2,7 +2,6 @@
 @import url('../css/reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;900&display=swap');
 
-
 body{
     background: linear-gradient(45deg, #a7cfdf 0%,#23538a 50%);
     font-family:  'Montserrat', sans-serif;
@@ -129,38 +128,38 @@ main{
     right: 30px;
     visibility: hidden;
 }
-.input-container.valido .input {
+.input-container--valido .input {
     border-bottom: 3px solid #0dbb2c;
 }
-.input-container.valido i .img-valido{
+.input-container--valido i .img-valido{
     visibility: visible;
 }
-.input-container.invalido .input{
+.input-container--invalido .input{
     border-bottom: 3px solid #dd0909;
 }
-.input-container.invalido i .img-invalido{
+.input-container--invalido i .img-invalido{
     visibility: visible;
 }
 .input-mensagem-erro {
     display: none;
 }
 
-.input-container.invalido .input-mensagem-erro {
+.input-container--invalido .input-mensagem-erro {
     color: #dd0909;
     display: block;
     margin-top: 0.2rem;
     padding-left: 0.5rem;
-} */
+}
 
 .botao {
     display: block;
     background-color: #007bff;
-    border-radius: 7px;
-    width: 100%;
-    margin-top: 1rem;
-    margin-left: calc(50% - 25%);
-    max-width: 20rem;
-    padding: 1.125rem;
+    border-radius: 10px;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: calc(50% - 45%);
+    /* max-width: 20rem; */
+    padding: 5px;
     box-sizing: border-box;
     font-family:  'Montserrat', sans-serif;
     font-weight: 600;
