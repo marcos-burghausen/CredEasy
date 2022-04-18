@@ -106,6 +106,30 @@ function validaCPF(input) {
     input.setCustomValidity(mensagem)
 }
 
+const mascaraCPF = document.querySelector('#cpf')
+    mascaraCPF.addEventListener('keypress', () => {
+        let mascaraCPFlength = mascaraCPF.value.length
+
+        if(mascaraCPFlength === 3 || mascaraCPFlength === 7) {
+                mascaraCPF.value += '.'
+            } else if(mascaraCPFlength === 11) {
+                mascaraCPF.value += '-'
+            }
+    })
+
+const mascaraTel = document.querySelector('#telefone')
+    mascaraTel.addEventListener('keypress', () => {
+        let mascaraTellength = mascaraTel.value.length
+
+        if(mascaraTellength === 0) {
+                mascaraTel.value += '('
+            } else if(mascaraTellength === 3) {
+                mascaraTel.value += ')'
+            } else if( mascaraTellength === 8){
+                mascaraTel.value += '-'
+            }
+    })
+
 function checaCPFRepetido(cpf) {
     const valoresRepetidos = [
         '00000000000',

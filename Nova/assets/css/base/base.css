@@ -76,6 +76,15 @@ nav li{
 	flex-direction: column;
 }
 
+
+footer{
+  color: #ffffff;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media(min-width: 800px) {
   .container {
 		padding-right: 2.5rem;
