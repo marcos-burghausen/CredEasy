@@ -1,0 +1,9 @@
+
+main{
+  height: calc(100vh - 130px);
+  width: 100%;
+}
+main h2{
+  font-size: 50px;
+  color: #ffffff;
+}

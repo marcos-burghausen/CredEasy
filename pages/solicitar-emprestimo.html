@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt" dir="br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cartao.css">
+    <link rel="stylesheet" href="../assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="../assets/css/componentes/botao.css">
+    <link rel="stylesheet" href="../assets/css/solicitar-emprestimo-style.css">
+    <title>CredEasy | Solicitar empréstimo</title>
+  </head>
+
+  <body>
+
+<!-- ==========================================cabeçalho=============================================== -->
+
+    <header>
+      <section>
+        <div class="logo">
+          <img src="../assets\midea\fluxo-de-dinheiro.png" alt="">
+          <h1>CredEasy</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </section>  
+    </header>
+
+<!-- =====================================conteúdo===================================================== -->
+    
+    <main class="container flex flex--coluna flex--centro">
+      <section class="cartao">
+        <h2 class="cartao__titulo">EMPRÉSTIMO</h2>
+        <form class="formulario flex flex--coluna" action="">
+          <div class="input-container">
+            <input name="preco" id="preco" class="input" type="text" placeholder="Valor" data-tipo="preco" required>
+              <label class="input-label" for="preco">Valor</label>
+              <span class="input-mensagem-erro">Este campo não está válido</span>
+          </div>
+          <div class="input-container">
+            <input name="senha" id="senha" class="input" type="password" placeholder="Senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." data-tipo="senha" required>
+            <label class="input-label" for="senha">Senha</label>
+            <span class="input-mensagem-erro">Este campo não está válido</span>
+          </div>
+          <button class="botao">Solicitar</a>
+        </form>
+    </section>
+    </main>
+
+<!-- ==========================================rodapé================================================ -->
+
+    <footer>
+      <p class="copyright">&copy; CredEasy - 2022</p>
+    </footer>
+    <script src="../js/app.js" type="module"></script>
+    <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
+  </body>
+</html>

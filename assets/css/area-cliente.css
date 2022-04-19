@@ -1,0 +1,16 @@
+.cliente{
+  font-size: 40px;
+  color: #007bff;
+}
+main{
+  height: calc(100vh - 130px);
+  width: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.dados-cliente a{
+  color: #ffffff;
+  font-size: 50px;
+  margin: 10px 0;
+}

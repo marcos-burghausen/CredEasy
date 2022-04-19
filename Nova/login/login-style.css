@@ -1,9 +1,0 @@
-.formulario a{
-  display: block;
-  margin: 15px 0;
-  text-decoration: none;
-  font-size: 20px;
-}
-.formulario a:hover{
-  text-decoration: underline;
-}
