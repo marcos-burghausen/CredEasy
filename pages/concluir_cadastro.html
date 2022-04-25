@@ -19,9 +19,9 @@
         </div>
         <nav>
           <ul>
-            <li><a href="../home/home.html">Home</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li><a href="../pages/home.html">Home</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Contato</a></li>
           </ul>
         </nav>
       </section>  
@@ -33,22 +33,22 @@
                 <fieldset>
                     <legend class="formulario__legenda">Informações pessoais</legend>
                     <div class="input-container">
-                        <input name="cpf" id="cpf" class="input" maxlength="14" type="text" placeholder="CPF" data-tipo="cpf" required>
+                        <input name="cpf" id="cpf" class="input" autocomplete="off" maxlength="14" type="text" placeholder="CPF" data-tipo="cpf" required>
                         <label class="input-label" for="cpf">CPF</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                     <div class="input-container">
-                        <input name="telefone" id="telefone" maxlength="13" class="input" type="text" placeholder="Telefone" data-tipo="telefone" required>
+                        <input name="telefone" id="telefone" maxlength="13" autocomplete="off" class="input" type="text" placeholder="Telefone" data-tipo="telefone" required>
                         <label class="input-label" for="telefone">Telefone</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                     <div class="input-container">
-                        <input name="profissao" id="profissao" class="input" type="text" placeholder="Profissao" data-tipo="profissao" required>
+                        <input name="profissao" id="profissao" class="input" type="text" autocomplete="off" placeholder="Profissao" data-tipo="profissao" required>
                         <label class="input-label" for="profissao">profissao</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                     <div class="input-container cadastro__preco-container">
-                        <input name="preco" id="preco" class="input" type="text" placeholder="Renda" data-tipo="preco" required>
+                        <input name="preco" id="preco" class="input" type="text" placeholder="Renda" autocomplete="off" data-tipo="preco" required>
                         <label class="input-label" for="preco">Renda</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
@@ -56,22 +56,22 @@
                 <fieldset>
                     <legend class="formulario__legenda">Endereço</legend>
                     <div class="input-container">
-                        <input name="cep" id="cep" class="input" type="text" placeholder="CEP" pattern="[\d]{5}-?[\d]{3}" data-tipo="cep" required>
+                        <input name="cep" id="cep" class="input" type="text" placeholder="CEP" autocomplete="off" pattern="[\d]{5}-?[\d]{3}" data-tipo="cep" required>
                         <label class="input-label" for="cep">CEP</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                     <div class="input-container">
-                        <input name="logradouro" id="logradouro" class="input" type="text" placeholder="Logradouro" data-tipo="logradouro" required>
+                        <input name="logradouro" id="logradouro" class="input" type="text" autocomplete="off" placeholder="Logradouro" data-tipo="logradouro" required>
                         <label class="input-label" for="logradouro">Logradouro</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                     <div class="input-container">
-                        <input name="cidade" id="cidade" class="input" type="text" placeholder="Cidade" data-tipo="cidade" required>
+                        <input name="cidade" id="cidade" class="input" type="text" autocomplete="off" placeholder="Cidade" data-tipo="cidade" required>
                         <label class="input-label" for="cidade">Cidade</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                     <div class="input-container">
-                        <input name="estado" id="estado" class="input" type="text" placeholder="Estado" data-tipo="estado" required>
+                        <input name="estado" id="estado" class="input" type="text" autocomplete="off" placeholder="Estado" data-tipo="estado" required>
                         <label class="input-label" for="estado">Estado</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>

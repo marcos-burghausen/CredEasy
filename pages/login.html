@@ -25,9 +25,9 @@
         </div>
         <nav>
           <ul>
-            <li><a href="../home/home.html">Home</a></li>
-            <li><a href="../produtos/">Produtos</a></li>
-            <li><a href="../contato.html">Contato</a></li>
+            <li><a href="../pages/home.html">Home</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Contato</a></li>
           </ul>
         </nav>
       </section>  
@@ -35,27 +35,27 @@
 
     <!-- =====================================conteúdo===================================================== -->
     
-    <main class="container flex flex--coluna flex--centro">
-      <section class="cartao">
-        <h2 class="cartao__titulo">LOGIN</h2>
-        <form class="formulario flex flex--coluna" action="">
-          <div class="input-container">
-            <input name="email" id="email" class="input" type="email" placeholder="Email" data-tipo="email" required>
-            <label class="input-label" for="email">Email</label>
-            <span class="input-mensagem-erro">Este campo não está válido</span>
-          </div>
-          <div class="input-container">
-            <input name="senha" id="senha" class="input" type="password" placeholder="Senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !^*_=+-]).{8,30}$" title="A senha deve conter entre  a 30 caracteres, deve conter pelo menos uma letra maiúscula, um número." data-tipo="senha" required>
-            <label class="input-label" for="senha">Senha</label>
-            <span class="input-mensagem-erro">Este campo não está válido</span>
-          </div>
-
-          <a href="">Escreci minha senha</a>
-          <a href="cadastro.html">Ainda não tem cadastro?</a>
-          <button class="botao">Cadastrar</a>
-            
+    <main >
+      <div class="container flex flex--coluna flex--centro">
+        <section class="cartao">
+          <h2 class="cartao__titulo">Acesse sua conta</h2>
+          <form class="formulario flex flex--coluna" action="">
+            <div class="input-container">
+              <input name="email" id="email" class="input" type="email" placeholder="Email" data-tipo="email" required>
+              <label class="input-label" for="email">Email</label>
+              <span class="input-mensagem-erro">Este campo não está válido</span>
+            </div>
+            <div class="input-container">
+              <input name="senha" id="senha" class="input" type="password" placeholder="Senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !^*_=+-]).{8,30}$" title="A senha deve conter entre  a 30 caracteres, deve conter pelo menos uma letra maiúscula, um número." data-tipo="senha" required>
+              <label class="input-label" for="senha">Senha</label>
+              <span class="input-mensagem-erro">Este campo não está válido</span>
+            </div>
+            <p><a class="" href="">Escreci minha senha</a></p>
+            <p>Ainda não tem cadastro?<a class="link" href="#">Cadastre-se.</a></p>
+            <button class="botao">Login</a>
           </form>
-      </section>
+        </section>
+      </div>
     </main>
 
 <!-- ==========================================rodapé================================================ -->

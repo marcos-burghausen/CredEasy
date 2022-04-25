@@ -5,7 +5,8 @@
 
 body{
   /* background: linear-gradient(45deg, #a7cfdf 0%,#23538a 50%); */
-  background-color: #23538a;
+  /* background-color: #23538a; */
+  background-color: var(--color-body);
   font-family:  'Montserrat', sans-serif;
   font-weight: 600;
 }
@@ -15,7 +16,8 @@ body{
 /* ===================================================================== */
 
 header{
-  padding: 15px;
+  height: 60px;
+  padding-top: 10px;
 }
 header section{
   width: 90%;
@@ -23,7 +25,8 @@ header section{
   display: flex;
   justify-content: space-around;
   align-items: center;
-    }
+  color: var(--color-fonte);
+}
 .logo{
   width: auto;
   display: flex;
@@ -32,17 +35,15 @@ header section{
 }
 .logo img{
   display: inline;
-  width: 60px;
+  width: 50px;
   height: auto;
 }
 .logo h1{
-  color: #007bff;
-  font-size: 50px;
+  font-size: 40px;
   display: inline;
   text-decoration: underline;
 }
 nav a{
-  color:#007bff; 
   text-decoration: none; 
 }
 nav a:hover{
@@ -50,17 +51,21 @@ nav a:hover{
 }
 nav li{
   display: inline;
-  font-size: 20px;
+  font-size: 1.1rem;
   margin: 0 10px;
 }
 .acesso a{
-  font-size: 25px;
-  margin: 0 30px;
-  color:#007bff;
   text-decoration: none;
 }
 .acesso a:hover{
   text-decoration: underline;
+}
+
+.container{
+  display: flex;
+  background-color: var(--color-div);
+  width: 100%;
+  height: 527px;
 }
 
 .flex {
@@ -77,10 +82,3 @@ nav li{
 }
 
 
-footer{
-  color: #ffffff;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

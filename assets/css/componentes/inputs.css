@@ -11,7 +11,8 @@
 
 .input {
     background-color: transparent;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    border: none;
     border-bottom: 1px solid #000000;
     padding: 1.375rem 0.5rem 0.5rem;
     height: 3.25rem;

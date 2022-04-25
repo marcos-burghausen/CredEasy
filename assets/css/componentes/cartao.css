@@ -1,15 +1,8 @@
 .cartao {
-    background-color: rgba(210, 210, 210, 0.2);
     border-radius: 10px;
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
     padding: 25px;
     box-sizing: border-box;
     margin: 40px;
-}
-
-.cartao__titulo {
-    font-size: 30px;
-    margin-bottom: 1rem;
-    text-align: center;
 }

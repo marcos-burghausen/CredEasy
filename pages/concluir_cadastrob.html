@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/base/base_style.css">
+  <link rel="stylesheet" href="../assets/css/componentes/cartao.css">
+  <link rel="stylesheet" href="../assets/css/concluir_cadastro.css">
+  <link rel="stylesheet" href="../assets/css/componentes/inputs.css">
+  <link rel="stylesheet" href="../assets/css/componentes/botao.css">
+  <title>CredEasy | home</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <img src="../assets/midea/fluxo-de-dinheiro.png" alt="fluxo de dinheiro" width="50" height="50">
+        <a class="navbar-brand logo font-color" href="home.html">CredEasy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active font-color" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-color" href="#">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-color" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container flex flex--coluna flex--centro">
+    <section class="cartao">
+        <h2 class="cartao__titulo">Complete seu cadastro</h2>
+        <form action="./cadastro_concluido.html" class="formulario flex flex--coluna">
+            <fieldset>
+                <legend class="formulario__legenda">Informações pessoais</legend>
+                <div class="input-container">
+                    <input name="cpf" id="cpf" class="input" autocomplete="off" maxlength="14" type="text" placeholder="CPF" data-tipo="cpf" required>
+                    <label class="input-label" for="cpf">CPF</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">
+                    <input name="telefone" id="telefone" maxlength="13" autocomplete="off" class="input" type="text" placeholder="Telefone" data-tipo="telefone" required>
+                    <label class="input-label" for="telefone">Telefone</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">
+                    <input name="profissao" id="profissao" class="input" type="text" autocomplete="off" placeholder="Profissao" data-tipo="profissao" required>
+                    <label class="input-label" for="profissao">profissao</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container cadastro__preco-container">
+                    <input name="preco" id="preco" class="input" type="text" placeholder="Renda" autocomplete="off" data-tipo="preco" required>
+                    <label class="input-label" for="preco">Renda</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="formulario__legenda">Endereço</legend>
+                <div class="input-container">
+                    <input name="cep" id="cep" class="input" type="text" placeholder="CEP" autocomplete="off" pattern="[\d]{5}-?[\d]{3}" data-tipo="cep" required>
+                    <label class="input-label" for="cep">CEP</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">
+                    <input name="logradouro" id="logradouro" class="input" type="text" autocomplete="off" placeholder="Logradouro" data-tipo="logradouro" required>
+                    <label class="input-label" for="logradouro">Logradouro</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">
+                    <input name="cidade" id="cidade" class="input" type="text" autocomplete="off" placeholder="Cidade" data-tipo="cidade" required>
+                    <label class="input-label" for="cidade">Cidade</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">
+                    <input name="estado" id="estado" class="input" type="text" autocomplete="off" placeholder="Estado" data-tipo="estado" required>
+                    <label class="input-label" for="estado">Estado</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+            </fieldset>
+            <button class="botao">Cadastrar</a>
+        </form>
+    </section>
+</main>
+<footer>
+  <p class="copyright">&copy; CredEasy - 2022</p>
+</footer>
+<script src="../js/app.js" type="module"></script>
+<script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

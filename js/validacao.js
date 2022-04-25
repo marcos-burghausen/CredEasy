@@ -25,6 +25,15 @@ const mensagensDeErro = {
   nome: {
     valueMissing: 'O campo de nome não pode estar vazio.'
   },
+  telefone: {
+    valueMissing: 'O campo de telefone não pode estar vazio.'
+  },
+  profissao: {
+    valueMissing: 'O campo de profissao não pode estar vazio.'
+  },
+  // renda: {
+  //   valueMissing: 'O campo de renda não pode estar vazio.'
+  // },
   email: {
     valueMissing: 'O campo de email não pode estar vazio.',
     typeMismatch: 'O email digitado não é válido.'
@@ -56,14 +65,15 @@ const mensagensDeErro = {
     valueMissing: 'O campo de estado não pode estar vazio.'
   },
   preco: {
-    valueMissing: 'O campo de preço não pode estar vazio.'
+    valueMissing: 'O campo de renda não pode estar vazio.'
   }
 }
 
 const validadores = {
   dataNascimento:input => validaDataNascimento(input),
   cpf:input => validaCPF(input),
-  cep:input => recuperarCEP(input)
+  cep:input => recuperarCEP(input),
+  confirmaSenha: () => compararSenha()
 }
 
 function mostraMensagemDeErro(tipoDeInput, input) {
@@ -221,4 +231,15 @@ function preencheCamposComCEP(data) {
   logradouro.value = data.logradouro
   cidade.value = data.localidade
   estado.value = data.uf
+}
+
+function compararSenha() {
+  const senha = document.querySelector('#senha')
+  const confirmarSenha = document.querySelector('#confirmarSenha')
+
+  if(senha === confirmarSenha) {
+    return true;
+  } else{
+    confirmar.setCustomValidity(mensagem);
+  }
 }
