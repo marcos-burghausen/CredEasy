@@ -1,23 +1,56 @@
-.font-color{
-  color: #007bff !important;
-} .font-white{
-  color: #ffffff;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+/* CORES DE TEXTO */
+.ft-verde{
+  color: #18cd19 !important;
 }
+.ft-azul{
+  color: #007bff !important;
+}
+.ft-cinza{
+  color: #a9abab;
+}
+.ft-branca{
+  color: #fefefe;
+}
+.ft-preto{
+  color: #000;
+}
+
+/* cores de fundo */
+.bg-verde{
+  background-color: #18cd19;
+}
+.bg-cinza{
+  background-color: #a9abab;
+}
+
+
 .font-family{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 .logo{
   font-weight: 600;
   font-size: 35px;
 }
+.bg-color-verde{
+  background-color: #a9abab;
+}
 .color-div{
   background-color: #dddddd;
 }
 .color-div-2{
-  background-color: #24444d;
+  /* background-color: #24444d; */
+  background-color: #8b8b8c;
 }
 .border-color{
-  border-color: #007bff !important;
+  border-color: #18cd19 !important;
+}
+
+/* Tamanho das fontes */
+.fs-7{
+  font-size: 11px;
 }
 .font-600{
   font-weight: 600;

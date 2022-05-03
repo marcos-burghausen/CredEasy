@@ -13,95 +13,68 @@
   <link rel="stylesheet" href="../assets/css/concluir_cadastro.css">
   <link rel="stylesheet" href="../assets/css/componentes/inputs.css">
   <link rel="stylesheet" href="../assets/css/componentes/botao.css">
-  <title>CredEasy | home</title>
+  <title>CredEasy | Completar cadastro</title>
 </head>
 
 <body class="font-family">
-
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <div class="d-flex">
-        <img src="../assets/midea/fluxo-de-dinheiro.png" alt="fluxo de dinheiro" width="50" height="50">
-        <a class="navbar-brand logo font-color" href="home.html">CredEasy</a>
-      </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active font-color" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-color" href="#">Produtos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-color" href="#">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
   <main>
-    <div class="d-flex justify-content-center mt-5 pt-4 color-div-2">
-    <section class="bg-light cartao mb-5">
-        <h2 class="font-color text-center">Complete seu cadastro</h2>
+    <div class="d-flex justify-content-center flex-column align-items-center mt-5 pt-4">
+      <a class="pb-2" href="home.html"><img src="../assets/midea/LOGOTIPO.png" alt="fluxo de dinheiro" width="300" ></a>
+      <section class=" cartao mb-3 mt-1">
+        <h2 class="ft-verde text-center fs-3">Complete seu cadastro</h2>
         <form action="" class="">
-            <fieldset>
-                <legend class="">Informações pessoais</legend>
-                <div class="input-container">
-                    <input name="cpf" id="cpf" class="input" autocomplete="off" maxlength="14" type="text" placeholder="CPF" data-tipo="cpf" required>
-                    <label class="input-label" for="cpf">CPF</label>
-                    <span class="input-mensagem-erro">Este campo não está válido</span>
-                </div>
-                <div class="input-container">
-                    <input name="telefone" id="telefone" maxlength="13" autocomplete="off" class="input" type="text" placeholder="Telefone" data-tipo="telefone" required>
-                    <label class="input-label" for="telefone">Telefone</label>
-                    <span class="input-mensagem-erro">Este campo não está válido</span>
-                </div>
-                <div class="input-container">
-                    <input name="profissao" id="profissao" class="input" type="text" autocomplete="off" placeholder="Profissao" data-tipo="profissao" required>
-                    <label class="input-label" for="profissao">profissao</label>
-                    <span class="input-mensagem-erro">Este campo não está válido</span>
-                </div>
-                <div class="input-container cadastro__preco-container">
-                    <input name="preco" id="preco" class="input" type="text" placeholder="Renda" autocomplete="off" data-tipo="preco" required>
-                    <label class="input-label" for="preco">Renda</label>
-                    <span class="input-mensagem-erro">Este campo não está válido</span>
-                </div>
+          <fieldset>
+            <legend class="ft-cinza">Informações pessoais</legend>
+            <div class="input-container">
+              <input name="cpf" id="cpf" class="input" autocomplete="off" maxlength="14" type="text" placeholder="CPF" data-tipo="cpf" required>
+              <label class="input-label" for="cpf">CPF</label>
+              <span class="input-mensagem-erro">Este campo não está válido</span>
+            </div>
+            <div class="input-container">
+              <input name="telefone" id="telefone" maxlength="13" autocomplete="off" class="input" type="text" placeholder="Telefone" data-tipo="telefone" required>
+              <label class="input-label" for="telefone">Telefone</label>
+              <span class="input-mensagem-erro">Este campo não está válido</span>
+            </div>
+            <div class="input-container">
+              <input name="profissao" id="profissao" class="input" type="text" autocomplete="off" placeholder="Profissao" data-tipo="profissao" required>
+              <label class="input-label" for="profissao">profissao</label>
+              <span class="input-mensagem-erro">Este campo não está válido</span>
+            </div>
+            <div class="input-container cadastro__preco-container">
+              <input name="preco" id="preco" class="input" type="text" placeholder="Renda" autocomplete="off" data-tipo="preco" required>
+              <label class="input-label" for="preco">Renda</label>
+              <span class="input-mensagem-erro">Este campo não está válido</span>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="formulario__legenda ft-cinza">Endereço</legend>
+              <div class="input-container">
+                <input name="cep" id="cep" class="input" type="text" placeholder="CEP" autocomplete="off" pattern="[\d]{5}-?[\d]{3}" data-tipo="cep" required>
+                <label class="input-label" for="cep">CEP</label>
+                <span class="input-mensagem-erro">Este campo não está válido</span>
+              </div>
+              <div class="input-container">
+                <input name="logradouro" id="logradouro" class="input" type="text" autocomplete="off" placeholder="Logradouro" data-tipo="logradouro" required>
+                <label class="input-label" for="logradouro">Logradouro</label>
+                <span class="input-mensagem-erro">Este campo não está válido</span>
+              </div>
+              <div class="input-container">
+                <input name="cidade" id="cidade" class="input" type="text" autocomplete="off" placeholder="Cidade" data-tipo="cidade" required>
+                <label class="input-label" for="cidade">Cidade</label>
+                <span class="input-mensagem-erro">Este campo não está válido</span>
+              </div>
+              <div class="input-container">
+                <input name="estado" id="estado" class="input" type="text" autocomplete="off" placeholder="Estado" data-tipo="estado" required>
+                <label class="input-label" for="estado">Estado</label>
+                <span class="input-mensagem-erro">Este campo não está válido</span>
+              </div>
             </fieldset>
-            <fieldset>
-                <legend class="formulario__legenda">Endereço</legend>
-                <div class="input-container">
-                    <input name="cep" id="cep" class="input" type="text" placeholder="CEP" autocomplete="off" pattern="[\d]{5}-?[\d]{3}" data-tipo="cep" required>
-                    <label class="input-label" for="cep">CEP</label>
-                    <span class="input-mensagem-erro">Este campo não está válido</span>
-                </div>
-                <div class="input-container">
-                    <input name="logradouro" id="logradouro" class="input" type="text" autocomplete="off" placeholder="Logradouro" data-tipo="logradouro" required>
-                    <label class="input-label" for="logradouro">Logradouro</label>
-                    <span class="input-mensagem-erro">Este campo não está válido</span>
-                </div>
-                <div class="input-container">
-                    <input name="cidade" id="cidade" class="input" type="text" autocomplete="off" placeholder="Cidade" data-tipo="cidade" required>
-                    <label class="input-label" for="cidade">Cidade</label>
-                    <span class="input-mensagem-erro">Este campo não está válido</span>
-                </div>
-                <div class="input-container">
-                    <input name="estado" id="estado" class="input" type="text" autocomplete="off" placeholder="Estado" data-tipo="estado" required>
-                    <label class="input-label" for="estado">Estado</label>
-                    <span class="input-mensagem-erro">Este campo não está válido</span>
-                </div>
-            </fieldset>
-            <button class="botao">Cadastrar</a>
+            <button class="botao border border-2 border-color ft-cinza">Cadastrar</a>
         </form>
-    </section>
+      </section>
     </div>
-</main>
-<footer class="d-flex justify-content-center bg-light font-color">
+  </main>
+<footer class="d-flex justify-content-center ft-cinza">
   <p class="copyright">&copy; CredEasy - 2022</p>
 </footer>
 <script src="../js/app.js" type="module"></script>

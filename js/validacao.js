@@ -73,7 +73,7 @@ const validadores = {
   dataNascimento:input => validaDataNascimento(input),
   cpf:input => validaCPF(input),
   cep:input => recuperarCEP(input),
-  confirmaSenha: () => compararSenha()
+  // confirmaSenha: () => compararSenha()
 }
 
 function mostraMensagemDeErro(tipoDeInput, input) {
@@ -116,29 +116,29 @@ function validaCPF(input) {
   input.setCustomValidity(mensagem)
 }
 
-const mascaraCPF = document.querySelector('#cpf')
-  mascaraCPF.addEventListener('keypress', () => {
-    let mascaraCPFlength = mascaraCPF.value.length
+// const mascaraCPF = document.querySelector('#cpf')
+//   mascaraCPF.addEventListener('keypress', () => {
+//     let mascaraCPFlength = mascaraCPF.value.length
 
-    if(mascaraCPFlength === 3 || mascaraCPFlength === 7) {
-      mascaraCPF.value += '.'
-    } else if(mascaraCPFlength === 11) {
-      mascaraCPF.value += '-'
-    }
-})
+//     if(mascaraCPFlength === 3 || mascaraCPFlength === 7) {
+//       mascaraCPF.value += '.'
+//     } else if(mascaraCPFlength === 11) {
+//       mascaraCPF.value += '-'
+//     }
+// })
 
-const mascaraTel = document.querySelector('#telefone')
-  mascaraTel.addEventListener('keypress', () => {
-    let mascaraTellength = mascaraTel.value.length
+// const mascaraTel = document.querySelector('#telefone')
+//   mascaraTel.addEventListener('keypress', () => {
+//     let mascaraTellength = mascaraTel.value.length
 
-    if(mascaraTellength === 0) {
-      mascaraTel.value += '('
-    } else if(mascaraTellength === 3) {
-      mascaraTel.value += ')'
-    } else if( mascaraTellength === 8){
-      mascaraTel.value += '-'
-    }
-})
+//     if(mascaraTellength === 0) {
+//       mascaraTel.value += '('
+//     } else if(mascaraTellength === 3) {
+//       mascaraTel.value += ')'
+//     } else if( mascaraTellength === 8){
+//       mascaraTel.value += '-'
+//     }
+// })
 
 function checaCPFRepetido(cpf) {
   const valoresRepetidos = [
@@ -233,13 +233,13 @@ function preencheCamposComCEP(data) {
   estado.value = data.uf
 }
 
-function compararSenha() {
-  const senha = document.querySelector('#senha')
-  const confirmarSenha = document.querySelector('#confirmarSenha')
+// function compararSenha() {
+//   const senha = document.querySelector('#senha')
+//   const confirmarSenha = document.querySelector('#confirmarSenha')
 
-  if(senha === confirmarSenha) {
-    return true;
-  } else{
-    confirmar.setCustomValidity(mensagem);
-  }
-}
+//   if(senha === confirmarSenha) {
+//     return true;
+//   } else{
+//     confirmar.setCustomValidity(mensagem);
+//   }
+// }

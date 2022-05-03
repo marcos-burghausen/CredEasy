@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,50 +15,14 @@
     <title>CredEasy | Criar conta</title>
   </head>
   <body class="font-family">
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-          <div class="d-flex">
-             <img src="../assets/midea/fluxo-de-dinheiro.png" alt="fluxo de dinheiro" width="50" height="50">
-            <a class="navbar-brand logo font-color" href="home.html">CredEasy</a>
-         </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active font-color" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link font-color" href="#">Produtos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link font-color" href="#">Contato</a>
-              </li>
-            </ul>
-          </div>
-          
-          <!-- <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active font-color border border-2 rounded-3 m-1 border-color" aria-current="page" href="#">Abrir conta</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link font-color border border-2 rounded-3 m-1 border-color" href="#">Acessar minha conta</a>
-              </li>
-            </ul>
-          </div> -->
-        </div>
-      </nav>
-    </header>
     <main>
-      <div  class="d-flex justify-content-center mt-5 pt-4 color-div-2">
-        <section class="bg-light cartao mb-5">
-          <h2 class="font-color text-center">Criar conta</h2>
+      <div  class="d-flex  justify-content-center flex-column align-items-center mt-5 pt-4">
+        <a class="pb-2" href="home.html"><img src="../assets/midea/LOGOTIPO.png" alt="fluxo de dinheiro" width="300" ></a>
+        <section class="cartao mb-3 mt-1">
+          <h2 class="ft-verde text-center fs-3">Criar conta</h2>
           <form action="" class="">
             <fieldset>
-              <legend class="">Informações básicas</legend>
+              <legend class="ft-cinza">Informações básicas</legend>
               <div class="input-container">
                 <input name="nome" id="nome" class="input" autocomplete="off" type="text" placeholder="Nome" data-tipo="nome" required>
                 <label class="input-label" for="nome">Nome</label>
@@ -85,12 +49,12 @@
                 <span class="input-mensagem-erro">Este campo não está válido</span>
               </div> -->
             </fieldset>
-            <button class="botao border border-2 border-color font-color">Cadastrar</a>
+            <button class="botao border border-2 border-color ft-cinza">Cadastrar</a>
           </form>
         </section>
       </div>
     </main>
-    <footer class="d-flex justify-content-center bg-light font-color">
+    <footer class="d-flex justify-content-center ft-cinza">
       <p class="copyright">&copy; CredEasy - 2022</p>
     </footer>
     <script src="../js/app.js" type="module"></script>
