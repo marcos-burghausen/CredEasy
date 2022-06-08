@@ -1,21 +1,39 @@
 <?php
 
 
-class Conta
+class Cliente
 {
-    private string $cpfTitular;
     private string $nomeTitular;
+    private string $emailTitular;
+    private string $senhaTitular;
+    private string $cpfTitular;
+    private string $telefoneTitular;
+    private string $profissaoTitular;
+    private float  $rendaTitular;
+    private string $cepTitular;
+    private string $ruaTitular;
+    private string $numeroTitular;
+    private string $bairroTitular;
+    private string $cidadeTitular;
+    private string $estatdoTitular;
     private float  $saldo;
 
-    public function __construct(string $cpfTitular, string $nomeTitular)
+    public function __construct(string $nomeTitular, string $emailTitular, string $senhaTitular,string $cpfTitular,string $telefoneTitular,string $profissaoTitular,float $rendaTitular,string $cepTitular,string $ruaTitular,string $numeroTitular,string $bairroTitular,string $cidadeTitular,string $estadoTitular)
     {
-        $this -> cpfTitular  = $cpfTitular;
-        if(strlen($nomeTitular) < 5) {
-            echo "O nome precisa ter pelo menos 5 caracteres";
-            exit();
-        }
-        $this -> nomeTitular = $nomeTitular;
-        $this -> saldo       = 0;
+        $this -> validaNome($nomeTitular);
+        $this -> nomeTitular      = $nomeTitular;
+        $this -> emailTitular     = $emailTitular;
+        $this -> senhaTitular     = $senhaTitular;
+        $this -> telefoneTitular  = $telefoneTitular;
+        $this -> profissaoTitular = $profissaoTitular;
+        $this -> rendaTitular     = $rendaTitular;
+        $this -> cepTitular       = $cepTitular;
+        $this -> ruaTitular       = $ruaTitular;
+        $this -> numeroTitular    = $numeroTitular;
+        $this -> bairroTitular    = $bairroTitular;
+        $this -> cidadeTitular    = $cidadeTitular;
+        $this -> estadoTitular    = $estadoTitular;
+        $this -> saldo            = 0;
     }
 
     public function sacar (float $valorASacar)
@@ -45,6 +63,16 @@ class Conta
             $contaDestino->depositar($valorATransferir);
         }
     }
+
+    private function validaNome(string $nomeTitular)
+    {
+        if(strlen($nomeTitular) < 5) {
+            echo "O nome precisa ter pelo menos 5 caracteres";
+            exit();
+        }
+    }
+
+
                                            //===============     
     public function recuperarCpfTitular(): string        //==   
     {                                                     //==  
@@ -65,36 +93,3 @@ class Conta
 
 }
 
-// $primeiraConta = new Conta();
-// $primeiraConta -> cpfTitular = "123.456.789.10";
-// $primeiraConta -> nomeTitular = "Marcos";
-// $primeiraConta -> saldo = 500;
-// print_r($primeiraConta);
-
-// $segundaConta = new Conta();
-// $segundaConta -> cpfTitular ="234.567.891-01";
-// $segundaConta -> nomeTitular = "Rafael";
-// $segundaConta -> saldo = 0;
-// print_r($segundaConta);
-
-// $primeiraConta -> sacar (50);
-// print_r($primeiraConta);
-// $primeiraConta -> depositar (100);
-// print_r($primeiraConta);
-// $primeiraConta -> transferir (200, $segundaConta);
-// print_r($primeiraConta);
-// print_r($segundaConta);
-
-function cadastrarClientes(string $cpf, string $nomeCliente, float $saldo): array
-{
-    return [
-        $cpf => [
-            'nome'      => $nomeCliente,
-            'saldo'     => $saldo,
-            ]
-        ];
-}
-
-$conta = cadastrarClientes('049.534.859-71', 'Marcos', 1000);
-
-print_r($conta);
