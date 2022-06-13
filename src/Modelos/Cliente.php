@@ -1,5 +1,5 @@
 <?php
-namespace br\com\sicredi\src\modelo;
+namespace br\com\CredEasy\src\modelo;
 
 class Cliente
 {
@@ -17,33 +17,29 @@ class Cliente
     private string $cidade;
     private string $estatdo;
     private float  $saldo;
-    private static $numeroDeContas = 0;
+    private static $numeroDeContas;
 
-    public function __construct($nome,$cpf)
+    
+    public function __construct(string $nome, string $email, string $senha,string $cpf,string $telefone,string $profissao,float $renda,string $cep,string $rua,string $numero,string $bairro,string $cidade,string $estado)
     {
-        $this->nome = $nome;
-        $this->cpf = $cpf;
-    }
-    // public function __construct(string $nome, string $email, string $senha,string $cpf,string $telefone,string $profissao,float $renda,string $cep,string $rua,string $numero,string $bairro,string $cidade,string $estado)
-    // {
-    //     $this -> validaNome($nome);
-    //     $this -> nome      = $nome;
-    //     $this -> email     = $email;
-    //     $this -> senha     = $senha;
-    //     $this -> cpf       = $cpf;
-    //     $this -> telefone  = $telefone;
-    //     $this -> profissao = $profissao;
-    //     $this -> renda     = $renda;
-    //     $this -> cep       = $cep;
-    //     $this -> rua       = $rua;
-    //     $this -> numero    = $numero;
-    //     $this -> bairro    = $bairro;
-    //     $this -> cidade    = $cidade;
-    //     $this -> estado    = $estado;
-    //     $this -> saldo            = 0;
+        $this -> validaNome($nome);
+        $this -> nome      = $nome;
+        $this -> email     = $email;
+        $this -> senha     = $senha;
+        $this -> cpf       = $cpf;
+        $this -> telefone  = $telefone;
+        $this -> profissao = $profissao;
+        $this -> renda     = $renda;
+        $this -> cep       = $cep;
+        $this -> rua       = $rua;
+        $this -> numero    = $numero;
+        $this -> bairro    = $bairro;
+        $this -> cidade    = $cidade;
+        $this -> estado    = $estado;
+        $this -> saldo     = 0;
 
-    //     self::$numeroDeContas++;
-    // }
+        self::$numeroDeContas++;
+    }
 
     public function __destruct()
     {

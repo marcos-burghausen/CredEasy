@@ -2,7 +2,7 @@
 require_once '../../Modelos/Cliente.php';
 require_once '../../service/ClienteService.php';
 
-use br\com\sicredi\src\service\ClienteService;
+use br\com\CredEasy\src\service\ClienteService;
 
 $clienteService = new ClienteService();
 $clientes = $clienteService->listaTodosOsClientes();
@@ -23,15 +23,35 @@ $clientes = $clienteService->listaTodosOsClientes();
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>CPF</th>
                     <th>NOME</th>
+                    <th>EMAIL</th>
+                    <th>CPF</th>
+                    <th>TELEFONE</th>
+                    <th>PROFISSÃO</th>
+                    <th>RENDA</th>
+                    <th>CEP</th>
+                    <th>RUA</th>
+                    <th>NÚMERO</th>
+                    <th>BAIRRO</th>
+                    <th>CIDADE</th>
+                    <th>ESTADO</th>
                 </tr>
             </thead>
             <tbody>
                 <?php foreach ($clientes as $cliente) { ?>
                     <tr>
-                        <td><?= $cliente->getCpf() ?></td>
                         <td><?php echo $cliente->getNome(); ?></td>
+                        <td><?= $cliente->getEmail() ?></td>
+                        <td><?= $cliente->getCpf() ?></td>
+                        <td><?= $cliente->getTelefone() ?></td>
+                        <td><?= $cliente->getProfissao() ?></td>
+                        <td><?= $cliente->getRenda() ?></td>
+                        <td><?= $cliente->getCep() ?></td>
+                        <td><?= $cliente->getRua() ?></td>
+                        <td><?= $cliente->getNumero() ?></td>
+                        <td><?= $cliente->getBairro() ?></td>
+                        <td><?= $cliente->getCidade() ?></td>
+                        <td><?= $cliente->getEstado() ?></td>
                     </tr>
                 <?php } ?>
             </tbody>
