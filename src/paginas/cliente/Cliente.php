@@ -1,5 +1,5 @@
 <?php
-namespace br\com\CredEasy\src\modelo;
+// namespace br\com\CredEasy\src\modelo;
 
 class Cliente
 {

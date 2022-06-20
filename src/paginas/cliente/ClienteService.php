@@ -1,6 +1,7 @@
 <?php
-namespace br\com\CredEasy\src\service;
-use br\com\CredEasy\src\Modelos\Cliente;
+// namespace br\com\CredEasy\src\service;
+// use br\com\CredEasy\src\Modelos\Cliente;
+require_once 'Cliente.php';
 
 class ClienteService {
 
@@ -18,7 +19,7 @@ class ClienteService {
             $jessica->getCpf() => $jessica,
             $marcos->getCpf() => $marcos,
             $matheuzinho->getCpf() => $matheuzinho,
-            $matheus->getCpf() => $faria,
+            $matheus->getCpf() => $matheus,
             $moises->getCpf() => $moises,
             $vinicius->getCpf() => $vinicius,
         ];

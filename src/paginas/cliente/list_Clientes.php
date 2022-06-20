@@ -1,8 +1,8 @@
 <?php
-require_once '../../Modelos/Cliente.php';
-require_once '../../service/ClienteService.php';
+// require_once '../../Modelos/Cliente.php';
+require_once 'ClienteService.php';
 
-use br\com\CredEasy\src\service\ClienteService;
+// use br\com\CredEasy\src\service\ClienteService;
 
 $clienteService = new ClienteService();
 $clientes = $clienteService->listaTodosOsClientes();

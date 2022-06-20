@@ -1,24 +1,24 @@
 <?php
 
-namespace br\com\CredEasy\src\modelo;
+// namespace br\com\CredEasy\src\modelo;
 
 class Parcelas
 {
     private float  $valor;
     private int    $numero;
-    private        $data_vencimento;
-    private        $data_pagamento;
+    private string $data_vencimento;
+    private string $data_pagamento;
     private float  $multa;
     private float  $valor_pago;
     private string $status;
     private string $emprestimo_id;
 
-    public function __construct(float $valor, int $numero, $data_vencimento, string $status)
+    public function __construct(float $valor, int $numero, string $data_vencimento, string $status)
     {
         $this->valor           = $valor;
         $this->numero          = $numero;
         $this->data_vencimento = $data_vencimento;
-        $this->status          = $status;
+        $this->status          = 'EM ABERTO';
     }
 
 
