@@ -1,31 +1,36 @@
 <?php
-require_once 'EmprestimoService.php';
-// namespace br\com\credeasy\
+// namespace br\com\sicredi\CredEasy\model;
+
+require_once 'Cliente.php';
+
+// use br\com\sicredi\CredEasy\model\Cliente;
 
 class Emprestimo
 {
     private int    $id;
+    private string $cpf_cliente;
     private float  $valor;
     private float  $taxa_juros;
     private float  $valor_final;
     private string $data_solicitacao;
     private string $data_quitacao;
     private string $status;
-    private string $cliente;  //referencia do cliente
+    private        $cliente;  //referencia do cliente
 
     private static $numeroDeEmprestimos = 0;
 
 
-    public function __construct(int $id, float $valor, float $taxa_juros, string $data_solicitacao, Cliente $cliente)
+    public function __construct(int $id, string $cpf_cliente, float $valor, float $taxa_juros, string $data_solicitacao, Cliente $cliente)
     {
-        $this->id = $id;
-        $this->valor = $valor;
-        $this->taxa_juros = $taxa_juros;
+        $this -> id        = $id;
+        $this->cpf_cliente = $cpf_cliente;
+        $this->valor       = $valor;
+        $this->taxa_juros  = $taxa_juros;
         // $this->valor_final = $valor_final;
         $this->data_solicitacao = $data_solicitacao;
         // $this->data_quitacao = $data_quitacao;
-        $this->status = 'SOLICITADO';
-        $this->cpf_cliente = $cpf_cliente;
+        $this->status      = 'SOLICITADO';
+        $this->cliente     = $cliente;
 
         self::$numeroDeEmprestimos++;
     }

@@ -1,37 +1,47 @@
 <?php
 
-// namespace br\com\CredEasy\src\modelo;
+// namespace br\com\sicredi\CredEasy\model;
 
 class Parcelas
 {
+    private int    $numero_parcela;
+    private int    $idEmprestimo;
     private float  $valor;
-    private int    $numero;
     private string $data_vencimento;
     private string $data_pagamento;
     private float  $multa;
     private float  $valor_pago;
     private string $status;
-    private string $emprestimo_id;
 
-    public function __construct(float $valor, int $numero, string $data_vencimento, string $status)
+    private $emprestimo;
+
+    public function __construct(int $numero_parcela, int $idEmprestimo, float $valor,  string $data_vencimento, Emprestimo $emprestimo)
     {
+        $this->numero_parcela  = $numero_parcela;
+        $this->idEmprestimo    = $idEmprestimo;
         $this->valor           = $valor;
-        $this->numero          = $numero;
         $this->data_vencimento = $data_vencimento;
+        $this->emprestimo      = $emprestimo;
         $this->status          = 'EM ABERTO';
     }
 
 
     //================getters================//
+    public function getNumeroParcela()
+    {
+            return $this->numero_parcela;
+    }
+    
+    public function getIdEmprestimo()
+    {
+            return $this->idEmprestimo;
+    }
+
     public function getValor()
     {
         return $this->valor;
     }
 
-    public function getNumero()
-    {
-            return $this->numero;
-    }
 
     public function getDataVencimento()
     {
@@ -56,11 +66,6 @@ class Parcelas
     public function getStatus()
     {
         return $this->status;
-    }
-
-    public function getEmprestimoId()
-    {
-        return $this->emprestimo_id;
     }
 
 
@@ -98,11 +103,6 @@ class Parcelas
     public function setStatus($status)
     {
         $this->status -> $status;
-    }
-
-    public function setEmprestimoId()
-    {
-        $this->emprestimo_id = $emprestimo_id;
     }
 
     

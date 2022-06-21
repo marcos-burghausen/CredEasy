@@ -1,8 +1,9 @@
 <?php
-// require_once '../../Modelos/Cliente.php';
-require_once 'ClienteService.php';
+// namespace br\com\sicredi\CredEasy\pages\clientes;
 
-// use br\com\CredEasy\src\service\ClienteService;
+require_once '../../ClienteService.php';
+
+// use br\com\sicredi\CredEasy\service\ClienteService;
 
 $clienteService = new ClienteService();
 $clientes = $clienteService->listaTodosOsClientes();

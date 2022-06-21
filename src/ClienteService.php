@@ -1,7 +1,9 @@
 <?php
-// namespace br\com\CredEasy\src\service;
-// use br\com\CredEasy\src\Modelos\Cliente;
-require_once 'Cliente.php';
+// namespace br\com\sicredi\CredEasy\service;
+
+require_once 'model/Cliente.php';
+
+// use br\com\sicredi\CredEasy\Model\Cliente;
 
 class ClienteService {
 
